@@ -1,0 +1,26 @@
+{% extends 'basic.html' %}
+
+{% block head %}
+<title>Log in</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="content">
+    <h1>Welcome</h1>
+    <form action="/login" method="POST">
+        <input type="text" name="user_name" id="user_name" placeholder="Who are you?" required>
+
+        <div style="margin-top: 12px;">
+            <input type="password" name="nickname" id="nickname" placeholder="Password" required>
+        </div>
+
+        <input type="submit" value="pass">
+
+    </form>
+    <div>
+        {{ message }}
+    </div>
+</div>
+
+{% endblock %}

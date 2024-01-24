@@ -1,0 +1,20 @@
+{% extends 'basic.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block body %}
+<div class="content">
+
+    <h1>It is the beginning</h1>
+    <a href="/">Again</a>
+
+</div>
+
+<div style="background-color: lightgray;">
+    <h3>For now you can read about your country -> <a href="{{'https://en.m.wikipedia.org/wiki/' + country }}" target="_blank">{{country.replace('_',' ')}}</a></h3>
+    <a href={{"https://en.m.wikipedia.org/wiki/globe#/media/File%3AFlag_of_"+country+".svg"}} target="_blank"><img src={{"https://www.sciencekids.co.nz/images/pictures/flags96/"+country+".jpg"}} target="_blank" alt="Clik on the image"></a>
+</div>
+{% endblock %}
